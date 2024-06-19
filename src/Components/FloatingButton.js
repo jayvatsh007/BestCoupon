@@ -4,6 +4,7 @@ import { TouchableOpacity, Image, StyleSheet } from 'react-native';
 const FloatingButton = ({ onPress }) => {
   return (
     <TouchableOpacity style={styles.floatingButton} onPress={onPress}>
+      {/* will work properly api throwing 502 */}
       <Image 
       source={require('../Image/Amazondum.png')}
        style={styles.icon} />
